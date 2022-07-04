@@ -207,16 +207,7 @@ label{
     .right{display: none;}
     .left{display: none;}
 }
-@media (min-width: 320px){
-    .card{
-        flex-grow: 1;
-        height: auto;
-        margin: 0px;}
 
-    .menu-for-mobile{display: block;}
-    .right{display: none;}
-    .left{display: none;}
-}
 
 
 

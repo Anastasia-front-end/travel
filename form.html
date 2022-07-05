@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Dosis:wght@800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="menu left">
+                    <ul>
+                        <li><a target="_blank" href="main.html" title="Main">Main</a></li>
+                        <li><a target="_blank" href="blog.html" title="Blog">Blog</a></li>
+                        <li><a target="_blank" href="form.html" title="Contact us">Contact us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu right">
+                    <ul>
+                        <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li> 
+                    </ul>
+                </div>
+                <div class="menu-for-mobile">
+                    <input type="checkbox" id="check-menu">
+                    <label for="check-menu">Menu</label>
+                    <div class="burger-line first"></div>
+                    <div class="burger-line second"></div>
+                    <div class="burger-line third"></div>
+                    <div class="burger-line fourth"></div>
+                    <div class="burger-line fifth"></div>
+                    <div class="burger-line sixth"></div>
+                    <nav class="main-menu">
+                        <a class="" href="#">Main</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact us</a>
+                    </nav>
+                </div>
+            </nav>
+           
+            <div class="box-color">
+                <h1>Contact us</h1>
+            </div>
+        </header>
+        <main>
+            <form action="" method="post">
+                <p>
+                    <input type="text"  name="login" placeholder="First name" required>
+                </p>
+                <p>
+                    <input type="email" name="email" placeholder="Email" required>
+                </p>
+                <p>
+                    <textarea name="comment" id="comment" placeholder="Write me something" cols="30" rows="10" ></textarea>
+                </p>
+                <p>
+                    <button type="submit" value="send"> Send</button>
+                </p>
+            </form>
+        </main>
+        <footer>
+            <p>
+                <small>© all rights reserved 2022</small> 
+            </p>
+        </footer>
+        <script src="https://kit.fontawesome.com/6887aef4cc.js" crossorigin="anonymous"></script>
+    </body>
+    </html>

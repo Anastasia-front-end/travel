@@ -1,10 +1,5 @@
-*{
-    box-sizing: border-box;}
+*{box-sizing: border-box;}
 
-.container{
-    max-width: 1200px;
-    margin: 0px auto;
-    }
 body{
     margin: 0;
     padding: 0;}
@@ -70,6 +65,9 @@ article h2{
     font-size: 36px;
     font-weight: bold;
     font-family: 'Balsamiq Sans', cursive;}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;}
 
 .box-card{
     display: flex;
@@ -111,40 +109,47 @@ footer p{
     display:none;
 }
 .menu-for-mobile{
-    width: 100%;
-    background-color:white;
-    box-sizing: border-box;
-    color: black;
-    font-weight: bold;
-    font-family: 'Balsamiq Sans', cursive;
+    width: 150px;
+    background-color: white;
     position: relative;
-    text-align: end;
-}
+    box-sizing: border-box;
+    height: 40px;
+    color: black;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;}
 
 #check-menu{
     display: none;
 }
 label{
-    font-size: 25px;
-    width:75px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
     cursor: pointer;
     z-index: 2;
-    margin-right: 60px;
 }
 .burger-line{
+    position: absolute;
     top: 8px;
     right: 10px;
     width:35px;
     height: 2px;
     background-color:#30ABAE;
     transition: 0.5s; 
-    position: absolute;
 }
-.menu-for-mobile div:nth-child(3),.menu-for-mobile div:nth-child(4) {
-    top: 19px;}
 
-.menu-for-mobile div:nth-child(5),.menu-for-mobile div:nth-child(6){
-    top: 30px;}
+.third, .fourth{
+    top: 19px;
+}
+.fifth, .sixth{
+    top: 30px;
+}
+  
+
 .main-menu{
     display: block;
     position: absolute;
@@ -157,6 +162,7 @@ label{
     font-size: 0;
     overflow: hidden;
     transition: 0.5s;
+    z-index: 1;
 }
 
 .main-menu a{
@@ -186,6 +192,8 @@ label{
     transform: rotate(-45deg);
 }
 
+
+
 @media (max-width: 1200px){
     body{
         margin: 0px;
@@ -208,6 +216,13 @@ label{
     .right{display: none;}
     .left{display: none;}
     .carousel-indicators{display: none;}
+    .article{
+        flex-direction: column;
+    }
+    header nav{
+        display: flex;
+        justify-content: end;
+    }
 }
 
 

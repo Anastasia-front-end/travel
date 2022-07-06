@@ -1,25 +1,24 @@
 *{
     box-sizing: border-box;}
 
+body{
+    margin: 0;
+    padding: 0;}
+
 nav{
-    width: 100%;
-    height: 66px;
     border-bottom:1px solid #C4C4C4;
     display: flex;
-    margin-bottom: 5px;}
+    max-width: 1200px;
+    margin: 0px auto;}
     
 nav ul{
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
     display:flex;
     justify-content: center;
     align-items:center;}
 
 .menu{width: 50%;}
 
-.menu li{
-    list-style: none;}
+.menu li{list-style: none;}
 
 .right li a{
     color: silver;
@@ -137,40 +136,45 @@ button:hover{
         display:none;
     }
     .menu-for-mobile{
-        width: 100%;
-        background-color:white;
-        box-sizing: border-box;
-        color: black;
-        font-weight: bold;
-        font-family: 'Balsamiq Sans', cursive;
+        width: 150px;
+        background-color: white;
         position: relative;
-        text-align: end;
+        box-sizing: border-box;
+        height: 40px;
+        color: black;
+        text-align: center;
+        font-family: 'Balsamiq Sans', cursive;
     }
     
     #check-menu{
         display: none;
     }
     label{
-        font-size: 25px;
-        width:75px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
         cursor: pointer;
         z-index: 2;
-        margin-right: 60px;
     }
     .burger-line{
+        position: absolute;
         top: 8px;
         right: 10px;
         width:35px;
         height: 2px;
         background-color:#30ABAE;
         transition: 0.5s; 
-        position: absolute;
     }
-    .menu-for-mobile div:nth-child(3),.menu-for-mobile div:nth-child(4) {
-        top: 19px;}
-    
-    .menu-for-mobile div:nth-child(5),.menu-for-mobile div:nth-child(6){
-        top: 30px;}
+    .third, .fourth{
+        top: 19px;
+    }
+    .fifth, .sixth{
+        top: 30px;
+    }
     .main-menu{
         display: block;
         position: absolute;
@@ -183,6 +187,7 @@ button:hover{
         font-size: 0;
         overflow: hidden;
         transition: 0.5s;
+        z-index: 1;
     }
     
     .main-menu a{
@@ -217,6 +222,11 @@ button:hover{
         .menu-for-mobile{display: block;}
         .right{display: none;}
         .left{display: none;}
+        
+    nav{
+        display: flex;
+        justify-content: end;
+    }
     
     .box-color{
         width: 85%;
